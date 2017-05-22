@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="numbers.forEach(myFunction)">CHECK</button>
+<p id="demo"></p>
+
+<script>
+function aSum(){
+  var total=[],undefined;
+  for(var i=0,l0=arguments.length;i<l0;i++)
+    for(var j=0,arg=arguments[i],l1=arg.length;j<l1;j++)
+      total[j]=(total[j]==undefined?0:total[j])+arg[j];
+  return total;
+}
+var Array1 = [1,9,10,11], Array2 = [5,8,7,2];
+document.write(aSum(Array1, Array2));
+
+demoP = document.getElementById("demo");
+var numbers = aSum(Array1, Array2);
+
+function myFunction(item, index) {
+    demoP.innerHTML = demoP.innerHTML + "index[" + index + "]: " + item + "<br>"; 
+    if(+ item == 17){
+    	console.log(+ item);
+        console.log("true");
+    }
+    else{
+    	console.log(+ item);
+        console.log("false");
+    }
+}
+</script>
+</body>
+</html>
