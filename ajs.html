@@ -4,6 +4,7 @@
 
 <button onclick="numbers.forEach(myFunction)">CHECK</button>
   <p id="demo"></p>
+  <h1>test</h1>
 
 <script>
 function aSum(){
@@ -20,7 +21,7 @@ demoP = document.getElementById("demo");
 var numbers = aSum(Array1, Array2);
 
 function myFunction(item, index) {
-    demoP.innerHTML = demoP.innerHTML + "index[" + index + "]: " + item + "<br>"; 
+    demoP.innerHTML = demoP.innerHTML + "index[" + index + "]: " + item + "<br>";
     if(+ item == 17){
     	console.log(+ item);
         console.log("true");
